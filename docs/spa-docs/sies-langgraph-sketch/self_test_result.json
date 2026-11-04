@@ -1,0 +1,47 @@
+{
+  "test": "self-application",
+  "baseline_settlement": {
+    "state": "PASS",
+    "explicit_pass": 7,
+    "explicit_fail": 0,
+    "total": 64,
+    "explicit_yield": 0.109375
+  },
+  "amended_settlement": {
+    "state": "PASS",
+    "explicit_pass": 6,
+    "explicit_fail": 0,
+    "total": 32,
+    "explicit_yield": 0.1875
+  },
+  "learning_event": {
+    "event_id": "sha256:a2b5ad517f1bf3a25ce08fae2e78b62d2dcb9cb367c3efc808e03773f3056000",
+    "provisional": "PASS",
+    "settled": "PASS",
+    "mismatch": false,
+    "rationale": "High CONFLICT rate and mismatch on stub probabilities"
+  },
+  "efficiency_gain": {
+    "nodes_reduction": "64 \u2192 32 (2x fewer)",
+    "wall_time_ms": {
+      "before": 0.2,
+      "after": 0.1
+    },
+    "conflict_eliminated": false,
+    "mismatch_eliminated": false,
+    "explicit_yield": {
+      "before": 0.109,
+      "after": 0.188
+    },
+    "stable_state": "PASS"
+  },
+  "stable_backend": {
+    "node_policy": "32 nodes, pass_p=0.12, fail_p=0.01",
+    "confidence_contract": {
+      "min_confidence": 0.8,
+      "min_explicit": 1
+    },
+    "expected_state": "PASS",
+    "receipt": "sha256:adcbad6b7c0abf7c6e4b5615638ea5a920aa5996582e85f605765bdb84cbf30c"
+  }
+}
