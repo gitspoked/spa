@@ -15,10 +15,11 @@ Document the stable contracts so that stubs may be replaced without altering set
 **Current:** `ContentAddressedNode.execute(claim) → {observation, response_receipt}`  
 **Replaceable by:**
 - LangGraph node + checkpointer
-- Containerized MKZ executor (Docker or equivalent)
+- Containerized executor whose payload is an MKZ archive (see ADR-004, gitspoked/mkz)
 - Remote agent call
 
-**Contract preserved:** ResponseReceipt + EvidenceObservation schema.
+**Contract preserved:** ResponseReceipt + EvidenceObservation schema.  
+**Identity:** SHA-256 of the MKZ archive (or equivalent content-addressed payload).
 
 ## 3. Settlement Boundary
 
