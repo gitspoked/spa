@@ -34,7 +34,7 @@ Static reference images live in `docs/images/`.
 | [docs/AMENDMENT-TEMPLATE.md](docs/AMENDMENT-TEMPLATE.md) | LearningEvent → AmendmentProposal template | 0.1.0 |
 | [docs/QUARANTINE.md](docs/QUARANTINE.md) | Unresolved claims | living |
 | [docs/PHASE-REVIEW.md](docs/PHASE-REVIEW.md) | Phase/object/flow alignment to DLC objectives + refinement direction | 0.1.0 |
-| [docs/adr/ADR-006-receipt-citation.md](docs/adr/ADR-006-receipt-citation.md) | Outer required, inner optional citation rules | Proposed |
+| [docs/adr/ADR-007-precision-loop.md](docs/adr/ADR-007-precision-loop.md) | Inner-digest attribution + mandatory counter-evidence | Proposed |
 
 ## Invariants
 

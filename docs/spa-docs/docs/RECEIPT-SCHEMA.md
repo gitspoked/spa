@@ -96,7 +96,36 @@ def receipt_id(kind: str, payload: dict) -> str:
     return f"{kind}:sha256:{hashlib.sha256(raw).hexdigest()}"
 ```
 
-## 8. Optional Inner Fields (ADR-006)
+## 9. Precision-Loop Fields (ADR-007)
+
+High-precision claims may require:
+
+```json
+"source_inner_digest": "sha256:…"
+```
+
+on every decisive explicit observation.
+
+Counter-evidence pair (from a different node identity):
+
+```json
+"counter_evidence": {
+  "type": "EXPLICIT_COUNTER | NO_COUNTER_EVIDENCE",
+  "node_identity": "sha256:…",
+  "receipt_id": "response:sha256:…"
+}
+```
+
+- `EXPLICIT_COUNTER`: the other node returned an opposing explicit status.
+- `NO_COUNTER_EVIDENCE`: the other node explicitly reported no contradicting evidence.
+
+Missing required fields on a high-precision claim → observation treated as non-decisive (does not contribute to PASS/FAIL). Malformed values → MALFORMED.
+
+Ordinary claims ignore these fields.
+
+---
+
+**Disposition:** Structural schema. Opt-in. Subject to later settled amendment.
 
 ResponseReceipt and SettlementReceipt may include:
 ```json

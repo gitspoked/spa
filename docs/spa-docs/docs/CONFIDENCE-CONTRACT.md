@@ -19,7 +19,7 @@ The contract never settles a claim.
 | min_confidence | float | 0.85 | Minimum predictor confidence |
 | min_explicit_observations | int | 1 | Minimum count of explicit (PASS/FAIL) observations |
 | max_conflict_ratio | float | 0.0 | Optional; if >0, provisional blocked when conflict ratio exceeds |
-| expiry | duration or null | null | Optional time bound |
+| require_counter_evidence | bool | false | When true, high-precision rules of ADR-007 apply |
 
 ## 3. Permission Rule
 

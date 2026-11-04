@@ -149,8 +149,7 @@ The following capabilities are now in scope as structural extensions (still not 
 - LearningEvent → AmendmentProposal template (see AMENDMENT-TEMPLATE.md)
 - Loadable ConfidenceContract JSON derived from CONFIDENCE-CONTRACT.md
 - Scale-probe mode (30/100/300) inside the harness
-- Receipt citation rules: outer node identity required, inner digests optional (ADR-006).  
-- Phase-by-phase alignment review (PHASE-REVIEW.md) drives incremental refinement.
+- Precision loop (ADR-007): high-precision claims require inner-digest attribution + explicit counter-evidence pair. Ordinary claims unchanged.
 
 These extensions produce evidence and receipts. They do not alter the core invariants.
 

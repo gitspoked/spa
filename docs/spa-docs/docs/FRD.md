@@ -111,8 +111,8 @@ The system shall expose a callable steward.check(claim_id) that returns whether 
 ### FR-017 — Inner Manifest
 When a node payload is an MKZ archive, it SHALL contain a canonical manifest listing each object’s path, SHA-256 digest, and role. The manifest itself SHALL have a manifest_digest. Stub payloads are exempt.
 
-### FR-018 — Receipt Citation
-ResponseReceipt and SettlementReceipt SHALL cite the outer node identity. Inner digests MAY be cited. LearningEvent MAY record inner_digest_changes. See ADR-006.
+### FR-019 — Precision Loop
+For claims marked high-precision, every decisive explicit observation SHALL cite source_inner_digest and SHALL be paired with either an explicit counter-observation or a NO_COUNTER_EVIDENCE receipt from a different node identity. Missing pair leaves the observation non-decisive. See ADR-007.
 
 ## 4. Traceability (expanded)
 
