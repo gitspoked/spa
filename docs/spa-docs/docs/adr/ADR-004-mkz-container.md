@@ -27,7 +27,7 @@ Adopt MKZ archives as the canonical on-disk / in-flight representation of a node
 - Node payloads gain a real container format with integrity and reversible packing.
 - Existing MKZ tooling (Rust CLI, C port) can be used to pack/unpack node memory without new code.
 - Identity remains content-addressed; mutation still creates a new object.
-- Gate 3 can still be satisfied with stubs; MKZ becomes the preferred path once the harness is stable.
+- See also ADR-005 for the inner identity layer (manifest of per-object digests inside the MKZ).
 
 ## Alternatives Considered
 

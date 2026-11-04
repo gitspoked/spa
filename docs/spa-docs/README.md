@@ -33,7 +33,7 @@ Static reference images live in `docs/images/`.
 | [docs/QUARANTINE-STEWARD.md](docs/QUARANTINE-STEWARD.md) | Callable quarantine enforcement | 0.1.0 |
 | [docs/AMENDMENT-TEMPLATE.md](docs/AMENDMENT-TEMPLATE.md) | LearningEvent → AmendmentProposal template | 0.1.0 |
 | [docs/QUARANTINE.md](docs/QUARANTINE.md) | Unresolved claims | living |
-| [docs/adr/ADR-004-mkz-container.md](docs/adr/ADR-004-mkz-container.md) | MKZ as node payload container | Proposed |
+| [docs/adr/ADR-005-inner-identity-layer.md](docs/adr/ADR-005-inner-identity-layer.md) | Inner MKZ-of-MKZ identity manifest | Proposed |
 
 ## Invariants
 

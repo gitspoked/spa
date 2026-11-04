@@ -19,7 +19,9 @@ Document the stable contracts so that stubs may be replaced without altering set
 - Remote agent call
 
 **Contract preserved:** ResponseReceipt + EvidenceObservation schema.  
-**Identity:** SHA-256 of the MKZ archive (or equivalent content-addressed payload).
+**Identity:**  
+- Outer: SHA-256 of the MKZ archive (ADR-004).  
+- Inner: per-object digests listed in a canonical manifest inside the archive (ADR-005). Nested MKZ archives are permitted.
 
 ## 3. Settlement Boundary
 

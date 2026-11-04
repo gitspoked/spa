@@ -149,7 +149,7 @@ The following capabilities are now in scope as structural extensions (still not 
 - LearningEvent → AmendmentProposal template (see AMENDMENT-TEMPLATE.md)
 - Loadable ConfidenceContract JSON derived from CONFIDENCE-CONTRACT.md
 - Scale-probe mode (30/100/300) inside the harness
-- MKZ archives (gitspoked/mkz) as the preferred content-addressed container for node memory + tools payloads (ADR-004). Stub JSON SHA remains valid for Gate 3.
+- Inner identity layer inside MKZ containers: canonical manifest of per-object SHA-256 digests (ADR-005). Outer archive digest remains the node identity.
 
 These extensions produce evidence and receipts. They do not alter the core invariants.
 
