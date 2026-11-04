@@ -1,0 +1,6 @@
+flowchart LR
+    E[Evidence<br/>3 PASS + 2 FAIL + 25 MISSING] --> S[Settler]
+    S --> C[SettlementReceipt CONFLICT]
+    C --> Q[Quarantine as premise]
+    C --> L[LearningEvent]
+    L --> A[AmendmentProposal]

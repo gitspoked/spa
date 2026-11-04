@@ -1,0 +1,9 @@
+stateDiagram-v2
+    [*] --> Gate0
+    Gate0 --> Gate1: structure consistent
+    Gate1 --> Gate2
+    Gate2 --> Gate3
+    Gate3 --> Gate4: receipts
+    Gate4 --> GateN
+    Gate3 --> Gate3: INDETERMINATE hold
+    Gate4 --> Gate4: amendment quarantined

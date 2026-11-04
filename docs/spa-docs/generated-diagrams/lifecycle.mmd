@@ -1,0 +1,21 @@
+flowchart TD
+    A[Claim C] --> B{Confidence contract satisfied?}
+    B -->|Yes| C[Emit provisional ResponseReceipt]
+    B -->|No| D[Skip provisional]
+    C --> E[Parallel Evidence Collection]
+    D --> E
+    E --> F[Deterministic Settler]
+    F --> G{State}
+    G -->|PASS| H[SettlementReceipt PASS]
+    G -->|FAIL| I[SettlementReceipt FAIL]
+    G -->|CONFLICT| J[SettlementReceipt CONFLICT]
+    G -->|INDETERMINATE| K[SettlementReceipt INDETERMINATE]
+    H --> L{Mismatch?}
+    I --> L
+    J --> L
+    K --> L
+    L -->|Yes| M[LearningEvent]
+    L -->|No| N[Continue]
+    M --> O[Optional Amendment]
+    O --> P[Gate decision]
+    N --> P

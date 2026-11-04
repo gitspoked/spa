@@ -1,0 +1,8 @@
+flowchart TD
+    LE[LearningEvent] --> AP[AmendmentProposal]
+    AP --> EV[Collect evidence]
+    EV --> ST{Settlement}
+    ST -->|PASS| UP[New artifact digest]
+    ST -->|other| QZ[Quarantine]
+    UP --> CAN[Canonical updated]
+    QZ --> HOLD[Process unchanged]
