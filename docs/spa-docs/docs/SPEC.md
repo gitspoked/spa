@@ -140,7 +140,18 @@ Roles may be human, agent, or hybrid. Each action is receipted.
 - Unlazy discipline (depth-first completion)
 - Existing sketch: `sies-langgraph-sketch/`
 
-## 13. Versioning
+## 14. Approved Extensions (v0.3.0)
+
+The following capabilities are now in scope as structural extensions (still not final system renderings):
+
+- Executable Gate 3/4 harness that emits Gate3Evidence + MetricsReceipt (see GATE-3-HARNESS.md)
+- Callable Quarantine Steward (see QUARANTINE-STEWARD.md)
+- LearningEvent → AmendmentProposal template (see AMENDMENT-TEMPLATE.md)
+- Loadable ConfidenceContract JSON derived from CONFIDENCE-CONTRACT.md
+- Scale-probe mode (30/100/300) inside the harness
+- Minimal receipt query surface (derived index; receipts remain source of truth)
+
+These extensions produce evidence and receipts. They do not alter the core invariants.
 
 This document is content-addressed. Future amendments produce new digests. The canonical designation is itself a settled claim.
 

@@ -102,6 +102,15 @@ without altering settlement or receipt contracts.
 - Process must remain executable after any single settled amendment.
 - No single role may both emit provisional direction and settle the same claim in a production configuration (separable in stubs).
 
+### FR-014 — Gate 3/4 Harness
+The system shall provide an executable harness that, given a claim and node count, produces ResponseReceipts, a SettlementReceipt, a Gate3Evidence receipt, and a MetricsReceipt. Scale-probe mode (30/100/300) shall be supported.
+
+### FR-015 — Quarantine Steward
+The system shall expose a callable steward.check(claim_id) that returns whether the claim may be used as a premise and emits a QuarantineReceipt on every blocking decision.
+
+### FR-016 — Amendment Template
+The system shall accept AmendmentProposals that conform to AMENDMENT-TEMPLATE.md and settle them as ordinary claims.
+
 ## 4. Traceability (expanded)
 
 | FR | SPEC | PROCESS | ADR | Schema |

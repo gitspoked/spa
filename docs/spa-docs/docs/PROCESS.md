@@ -160,7 +160,13 @@ Quarantine list is maintained in QUARANTINE.md (content-addressed on change).
 Gate 3 may be satisfied entirely with stub nodes (`ContentAddressedNode` in the sketch).  
 Replacement of stubs by LangGraph nodes, containerized MKZ executors, or real atomized memory is an extension, not a prerequisite.
 
-## 11. Non-Goals
+## 12. Executable Gate 3/4 Path
+
+Gate 3 evidence is produced by the harness defined in GATE-3-HARNESS.md.  
+Gate 4 reviews the resulting LearningEvents using the template in AMENDMENT-TEMPLATE.md.  
+Before any claim is reused as a premise, the orchestrator calls the Quarantine Steward (QUARANTINE-STEWARD.md).
+
+## 13. Non-Goals
 
 - Automatic process mutation
 - Confidence-based settlement

@@ -29,7 +29,9 @@ Static reference images live in `docs/images/`.
 | [docs/GATE-3-ORCHESTRATION-LOOP.md](docs/GATE-3-ORCHESTRATION-LOOP.md) | Minimal executable loop for Gate 3 | 0.1.0 |
 | [docs/RECEIPT-SCHEMA.md](docs/RECEIPT-SCHEMA.md) | Canonical receipt & LearningEvent schemas | 0.1.0 |
 | [docs/CONFIDENCE-CONTRACT.md](docs/CONFIDENCE-CONTRACT.md) | Provisional answer rules | 0.1.0 |
-| [docs/VISUAL-FLOWS.md](docs/VISUAL-FLOWS.md) | Full lifecycle diagrams, success/fail/conflict scenarios, efficiency metrics | 0.1.0 |
+| [docs/GATE-3-HARNESS.md](docs/GATE-3-HARNESS.md) | Executable Gate 3/4 harness + metrics | 0.1.0 |
+| [docs/QUARANTINE-STEWARD.md](docs/QUARANTINE-STEWARD.md) | Callable quarantine enforcement | 0.1.0 |
+| [docs/AMENDMENT-TEMPLATE.md](docs/AMENDMENT-TEMPLATE.md) | LearningEvent → AmendmentProposal template | 0.1.0 |
 | [docs/QUARANTINE.md](docs/QUARANTINE.md) | Unresolved claims | living |
 | [docs/adr/](docs/adr/) | ADR-001 identity, ADR-002 provisional vs settlement, ADR-003 self-amendment | — |
 

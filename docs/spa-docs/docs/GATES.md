@@ -23,16 +23,16 @@
 **Required evidence:** ADR files with context, decision, consequences, and alternatives.  
 **Settlement:** Structural.
 
-## Gate 3 — First Orchestration Loop with Receipts
+## Gate 3 — First Orchestration Loop with Receipts (updated)
 
-**Claim:** A minimal agentic loop has executed: parallel evidence collection → response receipts → deterministic settlement → (optional) LearningEvent.  
-**Required evidence:** Receipt log (content-addressed) from the sketch or equivalent.  
-**Settlement:** Evidence-driven. May remain INDETERMINATE if only stubs are used.
+**Claim:** A minimal agentic loop has executed and produced the evidence defined in GATE-3-HARNESS.md.  
+**Required evidence:** Gate3Evidence receipt + SettlementReceipt + MetricsReceipt (from harness).  
+**Settlement:** Evidence-driven.
 
-## Gate 4 — Learning Events Reviewed
+## Gate 4 — Learning Events Reviewed (updated)
 
-**Claim:** At least one LearningEvent has been examined and either produced a settled amendment or been explicitly quarantined.  
-**Required evidence:** LearningEvent receipt + amendment settlement or quarantine record.  
+**Claim:** At least one LearningEvent has been examined using AMENDMENT-TEMPLATE.md and either produced a settled amendment or been explicitly quarantined.  
+**Required evidence:** LearningEvent + AmendmentProposal settlement or QuarantineReceipt.  
 **Settlement:** Evidence-driven.
 
 ## Amendment of Gates
