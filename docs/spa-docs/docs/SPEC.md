@@ -149,7 +149,8 @@ The following capabilities are now in scope as structural extensions (still not 
 - LearningEvent → AmendmentProposal template (see AMENDMENT-TEMPLATE.md)
 - Loadable ConfidenceContract JSON derived from CONFIDENCE-CONTRACT.md
 - Scale-probe mode (30/100/300) inside the harness
-- Inner identity layer inside MKZ containers: canonical manifest of per-object SHA-256 digests (ADR-005). Outer archive digest remains the node identity.
+- Receipt citation rules: outer node identity required, inner digests optional (ADR-006).  
+- Phase-by-phase alignment review (PHASE-REVIEW.md) drives incremental refinement.
 
 These extensions produce evidence and receipts. They do not alter the core invariants.
 

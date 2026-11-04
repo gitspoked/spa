@@ -108,8 +108,11 @@ The system shall provide an executable harness that, given a claim and node coun
 ### FR-015 — Quarantine Steward
 The system shall expose a callable steward.check(claim_id) that returns whether the claim may be used as a premise and emits a QuarantineReceipt on every blocking decision.
 
-### FR-016 — Amendment Template
-The system shall accept AmendmentProposals that conform to AMENDMENT-TEMPLATE.md and settle them as ordinary claims.
+### FR-017 — Inner Manifest
+When a node payload is an MKZ archive, it SHALL contain a canonical manifest listing each object’s path, SHA-256 digest, and role. The manifest itself SHALL have a manifest_digest. Stub payloads are exempt.
+
+### FR-018 — Receipt Citation
+ResponseReceipt and SettlementReceipt SHALL cite the outer node identity. Inner digests MAY be cited. LearningEvent MAY record inner_digest_changes. See ADR-006.
 
 ## 4. Traceability (expanded)
 

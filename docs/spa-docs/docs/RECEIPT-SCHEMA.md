@@ -96,14 +96,26 @@ def receipt_id(kind: str, payload: dict) -> str:
     return f"{kind}:sha256:{hashlib.sha256(raw).hexdigest()}"
 ```
 
-## 7. Validation Rules (structural)
+## 8. Optional Inner Fields (ADR-006)
 
-- `status` must be one of the defined EvidenceStatus values.
-- `state` must be one of the four SettlementState values.
-- `mismatch` must be consistent with provisional_direction vs settled_state.
-- Digest must match payload bytes exactly.
+ResponseReceipt and SettlementReceipt may include:
+```json
+"inner_digests": ["sha256:…", "sha256:…"]
+```
 
-Failure of validation produces a MALFORMED evidence observation; it does not settle the parent claim.
+LearningEvent may include:
+```json
+"inner_digest_changes": [
+  {"path": "spines/document.md", "old": "sha256:…", "new": "sha256:…"}
+]
+```
+
+Gate3Evidence may include:
+```json
+"manifest_digest": "sha256:…"
+```
+
+These fields are optional. Their absence is valid. Malformed values produce a MALFORMED observation and do not settle the parent claim.
 
 ---
 
